@@ -1,0 +1,293 @@
+/* Disable scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Change fonts and background color */
+body {
+    font-family: "Raleway", "Quicksand", "Segoe UI";
+    background-color: #f3ebebc5;
+}
+
+/* Image background */
+.title_background {
+    background-image: url('../img/black_sky_stars.jpeg');
+}
+
+/* Rounded border */
+.border_round {
+    border-radius: 15px;
+}
+
+/* Text justify */
+.text_justify {
+    text-align: justify;
+}
+
+/* My Image */
+.img_profile_width {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Hover border */
+.hover_border:hover {
+    border: black solid 2px;
+}
+
+/* Auto change border color */
+@keyframes changeBorderColor {
+    0% {
+        border-color: red;
+    }
+
+    25% {
+        border-color: blue;
+    }
+
+    50% {
+        border-color: green;
+    }
+
+    75% {
+        border-color: orange;
+    }
+
+    100% {
+        border-color: purple;
+    }
+}
+
+/* Red color border */
+.border_main {
+    border: 1px solid red;
+    animation: changeBorderColor 3s infinite;
+}
+
+/* Hover border */
+.border_main:hover {
+    animation: none;
+}
+
+/* Fade In Animation */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeInAnimation {
+    animation: fadeInAnimation ease 3s;
+}
+
+/* Hide text */
+.hide_password {
+    -webkit-text-security: disc;
+}
+
+.background_light_blue {
+    background-color: #89D0F0;
+    font-weight: bold;
+}
+
+.background_dark_blue {
+    background-color: rgb(5, 17, 188);
+    font-weight: bold;
+}
+
+.border_bottom_rounded {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.lightblue_border {
+    border: 2px solid lightblue;
+}
+
+/* White Gradient background */
+.white_background {
+    min-height: 100vh;
+    background-image: url('../img/white_gradient.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-text-smaller {
+    font-size: 14px;
+}
+
+.bg_light_grey {
+    background-color: #F1F5F8;
+}
+
+.text_15 {
+    font-size: 15px;
+}
+
+.text_align {
+    text-align: start;
+}
+
+.navbarBtn:hover {
+    opacity: 0.8;
+}
+
+/* Zoom In */
+.enlarge:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Zoom In */
+.enlarge_event:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Main background width */
+.main_width {
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* Main menu card size */
+.menu_card {
+    height: 29rem;
+    width: 22rem;
+}
+
+/* Zoom In */
+.zoom_in {
+    transition: transform 0.5s ease;
+}
+
+.zoom_in:hover {
+    transform: scale(1.1);
+}
+
+/* View Alumni width */
+.alum_width {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* View Alumni card width */
+.alum_card {
+    width: 24rem;
+}
+
+/* View Alumni image size */
+.alum_img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* Profile Detail image size */
+.profile_img {
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* Profile Detail image size */
+.update_profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* Slide from right animation */
+.slide_in {
+    animation: slideFromRight 1s ease forwards;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* About page table */
+.table_dark_borders {
+    border: 2px solid black;
+}
+
+.table_dark_borders th,
+.table_dark_borders td {
+    border: 1px solid black;
+}
+
+/* Custom CSS to change CSS on small, medium screens */
+@media screen and (max-width: 767px) {
+    .text_align {
+        text-align: center;
+    }
+
+    .update_profile_img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        overflow: hidden;
+        margin: auto;
+    }
+}
+
+.Acc_btn[disabled] {
+    border-color: grey;
+    color: grey;
+}
+
+.delete_btn {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Letter appearing one by one Animation */
+@keyframes textAnimation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.appearing_word {
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    animation: textAnimation 4s linear;
+}
+
+/* Edit Event image size */
+.edit_event_img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: auto;
+}
